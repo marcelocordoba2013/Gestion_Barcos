@@ -9,3 +9,15 @@
 /Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Dominio/obj/Debug/net10.0/refint/Dominio.dll
 /Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Dominio/obj/Debug/net10.0/Dominio.pdb
 /Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Dominio/obj/Debug/net10.0/ref/Dominio.dll
+/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/bin/Debug/net10.0/Dominio.deps.json
+/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/bin/Debug/net10.0/Dominio.dll
+/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/bin/Debug/net10.0/Dominio.pdb
+/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/obj/Debug/net10.0/Dominio.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/obj/Debug/net10.0/Dominio.AssemblyInfoInputs.cache
+/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/obj/Debug/net10.0/Dominio.AssemblyInfo.cs
+/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/obj/Debug/net10.0/Dominio.csproj.CoreCompileInputs.cache
+/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/obj/Debug/net10.0/Dominio.sourcelink.json
+/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/obj/Debug/net10.0/Dominio.dll
+/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/obj/Debug/net10.0/refint/Dominio.dll
+/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/obj/Debug/net10.0/Dominio.pdb
+/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/obj/Debug/net10.0/ref/Dominio.dll

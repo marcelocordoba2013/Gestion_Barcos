@@ -1,0 +1,71 @@
+@model Dominio.Contenedor
+@{
+    ViewBag.Titulo = "Alta de contenedor";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <h1 class="mb-2">Alta de contenedor</h1>
+        <p class="text-muted">El largo y el ancho deben ser positivos. El color es obligatorio.</p>
+
+        @if (ViewBag.MensajeAlta is string mensaje)
+        {
+            <div class="alert alert-success" role="status">@mensaje</div>
+        }
+
+        <form asp-action="Alta" method="post" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="col-md-4">
+                <label class="form-label" for="Largo">Largo (m)</label>
+                <input asp-for="Largo" class="form-control" inputmode="decimal" data-val="false" />
+                <span asp-validation-for="Largo" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label" for="Ancho">Ancho (m)</label>
+                <input asp-for="Ancho" class="form-control" inputmode="decimal" data-val="false" />
+                <div class="form-text">Los decimales se escriben con coma.</div>
+                <span asp-validation-for="Ancho" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label" for="Color">Color</label>
+                <input asp-for="Color" class="form-control" data-val="false" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Agregar</button>
+            </div>
+        </form>
+
+        <h2 class="h4 mt-4">Contenedores del sistema</h2>
+        @if (ViewBag.Contenedores == null || ViewBag.Contenedores.Count == 0)
+        {
+            <p class="text-muted">Todavía no hay contenedores cargados.</p>
+        }
+        else
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Largo</th>
+                        <th>Ancho</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Dominio.Contenedor contenedor in ViewBag.Contenedores)
+                    {
+                        <tr>
+                            <td>@contenedor.Id</td>
+                            <td>@contenedor.Largo.ToString("0.##")</td>
+                            <td>@contenedor.Ancho.ToString("0.##")</td>
+                            <td>@contenedor.Color</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>

@@ -12,41 +12,49 @@ build_property.EntryPointFilePath =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebProject
 build_property.RootNamespace = WebProject
-build_property.ProjectDir = /Users/marcelocordoba/Documents/app/csharp/Test/Barcos/WebProject/
+build_property.ProjectDir = /Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/WebProject/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 10.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/marcelocordoba/Documents/app/csharp/Test/Barcos/WebProject
+build_property.MSBuildProjectDirectory = /Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/WebProject
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/WebProject/Views/Home/Index.cshtml]
+[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/WebProject/Views/Contenedor/Alta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGVuZWRvci9BbHRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/WebProject/Views/Contenedor/Barcos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGVuZWRvci9CYXJjb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/WebProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/WebProject/Views/Home/Privacy.cshtml]
+[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/WebProject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/WebProject/Views/Shared/Error.cshtml]
+[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/WebProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/WebProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/WebProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/WebProject/Views/_ViewImports.cshtml]
+[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/WebProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/WebProject/Views/_ViewStart.cshtml]
+[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/WebProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/WebProject/Views/Shared/_Layout.cshtml]
+[/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/WebProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-h6hpv966no

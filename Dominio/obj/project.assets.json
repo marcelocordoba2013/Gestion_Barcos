@@ -8,16 +8,16 @@
     "net10.0": []
   },
   "packageFolders": {
-    "/Users/marcelocordoba/.nuget/packages/": {}
+    "/var/folders/18/y4ptj9jx1zb5r5stbgf27cyh0000gn/T/cursor-sandbox-cache/5137c61dafa74486fcd50166dd20f8f4/nuget": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Dominio/Dominio.csproj",
+      "projectUniqueName": "/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Dominio/Dominio.csproj",
-      "packagesPath": "/Users/marcelocordoba/.nuget/packages/",
-      "outputPath": "/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Dominio/obj/",
+      "projectPath": "/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/Dominio.csproj",
+      "packagesPath": "/var/folders/18/y4ptj9jx1zb5r5stbgf27cyh0000gn/T/cursor-sandbox-cache/5137c61dafa74486fcd50166dd20f8f4/nuget",
+      "outputPath": "/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marcelocordoba/.nuget/NuGet/NuGet.Config"

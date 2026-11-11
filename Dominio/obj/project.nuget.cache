@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jbbYbsjOxvQ=",
+  "dgSpecHash": "/K6lY4h3yBA=",
   "success": true,
-  "projectFilePath": "/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Dominio/Dominio.csproj",
+  "projectFilePath": "/Users/marcelocordoba/Documents/app/csharp/Test/Barcos/Gestion_Barcos/Dominio/Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

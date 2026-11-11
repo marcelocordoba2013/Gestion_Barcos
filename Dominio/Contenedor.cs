@@ -3,10 +3,20 @@
 public class Contenedor
 {
     private static int _ultimoId = 1;
-    public int Id { get; }
-    public double Largo { get; }
-    public double Ancho { get; }
-    public string Color { get; }
+    private string _color = string.Empty;
+
+    public int Id { get; private set; }
+    public double Largo { get; set; }
+    public double Ancho { get; set; }
+    public string Color
+    {
+        get { return _color; }
+        set { _color = value?.Trim() ?? string.Empty; }
+    }
+
+    public Contenedor()
+    {
+    }
 
     public Contenedor(double largo, double ancho, string color)
     {
@@ -18,14 +28,38 @@ public class Contenedor
 
     public void Validar()
     {
-        if (Largo <= 0 || Ancho <= 0)
+        ValidarMedidas();
+        ValidarColor();
+    }
+
+    private void ValidarMedidas()
+    {
+        if (Largo <= 0)
         {
-            throw new ArgumentException("El largo y el ancho deben ser valores positivos.");
+            throw new ArgumentException("El largo debe ser un valor positivo.");
         }
-        if (string.IsNullOrEmpty(Color))
+        if (Ancho <= 0)
+        {
+            throw new ArgumentException("El ancho debe ser un valor positivo.");
+        }
+    }
+
+    private void ValidarColor()
+    {
+        if (string.IsNullOrWhiteSpace(Color))
         {
             throw new ArgumentException("El color es un campo obligatorio.");
         }
+    }
+
+    public override bool Equals(object? obj)
+    {
+        return obj is Contenedor otro && Id == otro.Id;
+    }
+
+    public override int GetHashCode()
+    {
+        return Id.GetHashCode();
     }
 
     // Para calcular el costo del alquiler del contenedor se toma en cuenta lo siguiente:
