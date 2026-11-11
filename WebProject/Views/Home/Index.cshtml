@@ -1,0 +1,77 @@
+﻿@model CostoAlquilerViewModel
+@{
+    ViewData["Title"] = "Costo de alquiler";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <h1 class="mb-2">Costo de alquiler</h1>
+        <p class="text-muted">
+            El costo es el costo base multiplicado por la cantidad de destinos.
+            Un particular suma 10 % si el contenedor mide más de 8 m.
+            Una empresa con más de 5 años resta el descuento.
+        </p>
+
+        <form asp-action="Index" method="post" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="col-md-4">
+                <label asp-for="CostoBase" class="form-label"></label>
+                <input asp-for="CostoBase" class="form-control" />
+                <span asp-validation-for="CostoBase" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="Largo" class="form-label"></label>
+                <input asp-for="Largo" class="form-control" />
+                <span asp-validation-for="Largo" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="TipoCliente" class="form-label"></label>
+                <select asp-for="TipoCliente" class="form-select">
+                    <option value="Particular">Particular</option>
+                    <option value="Empresa">Empresa</option>
+                </select>
+                <span asp-validation-for="TipoCliente" class="text-danger"></span>
+            </div>
+
+            <div class="col-12">
+                <label asp-for="Destinos" class="form-label"></label>
+                <input asp-for="Destinos" class="form-control" />
+                <div class="form-text">Separados por coma. Cada uno cuenta como un destino del barco.</div>
+                <span asp-validation-for="Destinos" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-4">
+                <label asp-for="FechaAlta" class="form-label"></label>
+                <input asp-for="FechaAlta" class="form-control" type="date" />
+                <span asp-validation-for="FechaAlta" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="FechaAlquiler" class="form-label"></label>
+                <input asp-for="FechaAlquiler" class="form-control" type="date" />
+                <span asp-validation-for="FechaAlquiler" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="DescuentoAntiguedad" class="form-label"></label>
+                <input asp-for="DescuentoAntiguedad" class="form-control" />
+                <span asp-validation-for="DescuentoAntiguedad" class="text-danger"></span>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Calcular</button>
+            </div>
+        </form>
+
+        @if (Model.Costo is double costo && Model.CostoSinAjuste is double costoSinAjuste)
+        {
+            <div class="alert alert-success mt-4" role="status">
+                <div>@Model.CostoBase.ToString("0.##") × @Model.CantidadDestinos destinos = @costoSinAjuste.ToString("0.##")</div>
+                <div class="fs-4 mb-0">Costo del alquiler: @costo.ToString("0.##")</div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
