@@ -45,7 +45,7 @@ public class Sistema
 
     }
 
-    public List<Transporte> ObtenerTransportesContenedor(string id)
+    public List<Transporte> ObtenerTransportesContenedor(int id)
     {
         List<Transporte> resultado = new List<Transporte>();
 
@@ -58,6 +58,21 @@ public class Sistema
         }
 
         return resultado;
+    }
+
+    public double ObtenerImporteTotalBarco(int id)
+    {
+        double total = 0;
+
+        foreach (Transporte t in _transportes)
+        {
+            if (t.Barco.Id == id)
+            {
+                total += t.Costo;
+            }
+        }
+
+        return total;
     }
 
 }
