@@ -45,4 +45,19 @@ public class Sistema
 
     }
 
+    public List<Transporte> ObtenerTransportesContenedor(string id)
+    {
+        List<Transporte> resultado = new List<Transporte>();
+
+        foreach (Transporte t in _transportes)
+        {
+            if (t.Contenedor.Id == id)
+            {
+                resultado.Add(t);
+            }
+        }
+
+        return resultado;
+    }
+
 }
